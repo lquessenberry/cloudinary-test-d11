@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PHPUnit config for Cloudinary Drupal module unit tests.
+     Run from project root: ddev exec vendor/bin/phpunit -c phpunit.xml -->
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         bootstrap="web/core/tests/bootstrap.php"
+         colors="true"
+         beStrictAboutTestsThatDoNotTestAnything="true"
+         failOnWarning="false"
+         cacheResult="false"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.5/phpunit.xsd">
+  <php>
+    <ini name="error_reporting" value="32767"/>
+    <ini name="memory_limit" value="-1"/>
+    <env name="SIMPLETEST_BASE_URL" value="https://cloudinary-test-d11.ddev.site"/>
+    <env name="SIMPLETEST_DB" value="mysql://db:db@db/db"/>
+  </php>
+
+  <testsuites>
+    <testsuite name="cloudinary_unit">
+      <directory>web/modules/contrib/cloudinary/tests/src/Unit</directory>
+    </testsuite>
+  </testsuites>
+
+  <source>
+    <include>
+      <directory>web/modules/contrib/cloudinary/modules/cloudinary_admin/src</directory>
+      <directory>web/modules/contrib/cloudinary/modules/cloudinary_transform_layers/src</directory>
+    </include>
+  </source>
+</phpunit>

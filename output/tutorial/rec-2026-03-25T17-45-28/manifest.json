@@ -1,0 +1,176 @@
+[
+  {
+    "index": 1,
+    "id": "s01_intro",
+    "pause_ms": 12000,
+    "text": "Welcome to the complete Cloudinary Drupal module tutorial. In this video we explore every feature — from initial configuration to advanced chained image transformations — using a single source upload."
+  },
+  {
+    "index": 2,
+    "id": "s02_settings",
+    "pause_ms": 10000,
+    "text": "Start at Configuration, then Media, then Cloudinary. This is the main SDK settings page where you enter your Cloud Name, API Key, and API Secret from the Cloudinary dashboard."
+  },
+  {
+    "index": 3,
+    "id": "s03_settings_fields",
+    "pause_ms": 9000,
+    "text": "Your Cloud Name is the unique identifier for your Cloudinary account. The API credentials allow Drupal to upload and manage assets on your behalf."
+  },
+  {
+    "index": 4,
+    "id": "s04_ai_settings",
+    "pause_ms": 9000,
+    "text": "The A-I settings panel controls Cloudinary's automated tagging, background removal, content moderation, and O-C-R features — all powered by Cloudinary's machine learning pipeline."
+  },
+  {
+    "index": 5,
+    "id": "s05_transform_layers",
+    "pause_ms": 9000,
+    "text": "Transform Layers let you define global responsive breakpoints and per-taxonomy-term transformation rules, so images automatically adapt to device and context."
+  },
+  {
+    "index": 6,
+    "id": "s06_asset_library",
+    "pause_ms": 10000,
+    "text": "The Cloudinary Asset Library at /admin/content/cloudinary/assets shows every asset in your cloud account with its public ID, resource type, format, and sync status."
+  },
+  {
+    "index": 7,
+    "id": "s07_asset_search",
+    "pause_ms": 9000,
+    "text": "Use the search bar to filter by filename or tag. The Type selector filters to images, videos, or raw files. Results update live as you type."
+  },
+  {
+    "index": 8,
+    "id": "s08_asset_folder",
+    "pause_ms": 8000,
+    "text": "The Folder dropdown lets you navigate assets organised in folder prefixes — exactly matching the structure in your Cloudinary Media Library dashboard."
+  },
+  {
+    "index": 9,
+    "id": "s09_asset_detail",
+    "pause_ms": 9000,
+    "text": "Clicking any asset opens its detail page showing the full public ID, dimensions, file size, format, and a live preview at various transformation presets."
+  },
+  {
+    "index": 10,
+    "id": "s10_bulk_ops",
+    "pause_ms": 9000,
+    "text": "The Bulk Operations page lets you select multiple assets and run batch actions — such as pulling the latest metadata from Cloudinary or syncing to Drupal media entities."
+  },
+  {
+    "index": 11,
+    "id": "s11_usage_stats",
+    "pause_ms": 8000,
+    "text": "The Usage Statistics page reports your current Cloudinary plan consumption: storage, transformations, bandwidth, and AI credits — all pulled live from the Cloudinary API."
+  },
+  {
+    "index": 12,
+    "id": "s12_media_picker",
+    "pause_ms": 10000,
+    "text": "The Cloudinary Media Library Picker is an embedded asset browser that field widgets and the Drupal Media Library both use. It opens in a modal and sends the selected asset back to the form via post message."
+  },
+  {
+    "index": 13,
+    "id": "s13_media_picker_select",
+    "pause_ms": 8000,
+    "text": "Clicking Select on any row returns the asset's public ID, resource type, and a thumbnail URL to the parent form — ready to be saved as a Cloudinary Asset field value."
+  },
+  {
+    "index": 14,
+    "id": "s14_content_edit",
+    "pause_ms": 9000,
+    "text": "Now let's look at content authoring. On any node edit form with Cloudinary Asset fields, the widget shows a thumbnail, the public ID, and an Open Library button."
+  },
+  {
+    "index": 15,
+    "id": "s15_image_styles",
+    "pause_ms": 10000,
+    "text": "Cloudinary image styles live alongside standard Drupal styles at /admin/config/media/image-styles. We have created 40 preset styles — all prefixed with c-l-d underscore — covering crops, effects, tone adjustments, and chained pipelines."
+  },
+  {
+    "index": 16,
+    "id": "s16_style_detail",
+    "pause_ms": 10000,
+    "text": "Each style uses a single Cloudinary Transformation image effect. The Raw Transformation field accepts the full Cloudinary URL parameter string. For chained transformations, each step is separated by a forward slash."
+  },
+  {
+    "index": 17,
+    "id": "s17_formatters",
+    "pause_ms": 10000,
+    "text": "Field formatters control how Cloudinary assets render on the front end. The module provides four formatters: Cloudinary Image for static renders, Cloudinary Video for video playback, Cloudinary Responsive for srcset-driven images, and Cloudinary Transformed for applying a named image style."
+  },
+  {
+    "index": 18,
+    "id": "s18_gallery_intro",
+    "pause_ms": 10000,
+    "text": "The Transformation Gallery at node 16 is a live demo of every transformation type. One JPEG of our watermelon man was uploaded once. All 40 card images are generated on the fly by Cloudinary at request time — zero pre-generated variants."
+  },
+  {
+    "index": 19,
+    "id": "s19_gallery_hero",
+    "pause_ms": 8000,
+    "text": "The hero banner uses a fill crop at 1400 by 380 pixels with auto gravity, so Cloudinary picks the most interesting region of the photo automatically."
+  },
+  {
+    "index": 20,
+    "id": "s20_gallery_crops",
+    "pause_ms": 10000,
+    "text": "The Crop Modes section demonstrates 8 algorithms: fill and thumb use smart content-aware cropping; fit and scale preserve aspect ratio; pad adds background fill; crop with center or north gravity pins the focal point; and limit caps the maximum dimension."
+  },
+  {
+    "index": 21,
+    "id": "s21_gallery_effects",
+    "pause_ms": 10000,
+    "text": "The Visual Effects section shows 10 effects. Grayscale, sepia, oil paint, blur, vignette, cartoonify, and pixelate are classic filters. Art Hokusai and Art Athena are Cloudinary's neural art style transfer effects — applied entirely server-side."
+  },
+  {
+    "index": 22,
+    "id": "s22_gallery_adjust",
+    "pause_ms": 9000,
+    "text": "The Tone and Colour Adjustments section covers sharpen, vibrance, saturation, contrast, and brightness — each with a specific strength value — plus Auto Color which uses A-I white balance correction."
+  },
+  {
+    "index": 23,
+    "id": "s23_chains_intro",
+    "pause_ms": 11000,
+    "text": "The Chain Transformations section is where Cloudinary really shines. Each forward slash in the delivery URL is a separate processing stage. The output of step N becomes the input of step N plus 1, letting you compose powerful multi-step pipelines in a single request."
+  },
+  {
+    "index": 24,
+    "id": "s24_chains_basic",
+    "pause_ms": 10000,
+    "text": "The first eight chains demonstrate composing simple effects: fill then grayscale then vignette; fill then oil paint then sharpen; thumb with face gravity then sepia then contrast. The step counter badge in the top-right shows how many stages each pipeline uses."
+  },
+  {
+    "index": 25,
+    "id": "s25_chains_shapes",
+    "pause_ms": 11000,
+    "text": "Shape chains are some of the most useful patterns. r underscore max rounds any image into a perfect circle or oval. Here we combine a face-aware thumb crop with r-max and then add a coloured outline. The output is a PNG to preserve the transparent background around the circle."
+  },
+  {
+    "index": 26,
+    "id": "s26_chains_duotone",
+    "pause_ms": 10000,
+    "text": "Duotone chains use e underscore grayscale to strip colour, then e underscore tint with two colour stops to apply a gradient wash. Orange to yellow gives a warm duotone; blue to purple gives a cool one. The tint effect accepts up to seven colour stops for complex gradients."
+  },
+  {
+    "index": 27,
+    "id": "s27_chains_artistic",
+    "pause_ms": 10000,
+    "text": "The artistic chains push the pipeline further. The Cartoonify Circle Purple Glow card is a 5-step pipeline: face thumb crop, then cartoonify, then r-max for the circle, then a purple coloured outline, and finally a drop shadow — all in one URL."
+  },
+  {
+    "index": 28,
+    "id": "s28_style_badge",
+    "pause_ms": 10000,
+    "text": "Each card shows the Drupal image style machine name in a badge below the transformation code. These 40 styles are ready to use anywhere in your site — in Views fields, Twig templates, or the Image formatter — just reference the style name."
+  },
+  {
+    "index": 29,
+    "id": "s29_outro",
+    "pause_ms": 11000,
+    "text": "That completes the full walkthrough of the Cloudinary Drupal module family: SDK configuration, asset library, media integration, content authoring, image styles, field formatters, and chained transformation pipelines. All source code and the 40 preset image styles are in the repository. Thank you for watching."
+  }
+]

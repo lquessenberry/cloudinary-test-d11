@@ -1,0 +1,32 @@
+# DDEV
+.ddev/.gitignore
+.ddev/db_snapshots
+.ddev/import-db
+.ddev/import-files
+.ddev/xhprof
+
+# Drupal
+web/
+vendor/
+composer.lock
+composer.contrib.json
+
+# Environment
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+tests/playwright/.auth/
+/screenshots

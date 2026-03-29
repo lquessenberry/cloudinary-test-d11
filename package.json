@@ -1,0 +1,25 @@
+{
+  "name": "cloudinary-test-d11",
+  "version": "1.0.0",
+  "description": "Extension modules for `drupal/cloudinary` (3.0.x) that add advanced features using the full Cloudinary PHP SDK.",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.5.0",
+    "typescript": "^6.0.2"
+  }
+}
